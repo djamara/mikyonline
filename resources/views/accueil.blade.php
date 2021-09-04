@@ -29,6 +29,10 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
 
+    <style>
+        .navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {border-bottom-color:#e84040; }section h2.section-heading, .text-muted-role, a, .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {color:#e84040;}.btn-xl, ul.social-buttons li a, ul.filter li a, .pricing .border, .pricing a.btn-send, .scroll-up a, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle, .scroll-up a:hover, .scroll-up a:active, .pricing-top-box {background-color: #e84040;}#services i.fa, #testimonials {background:#e84040;} 
+    </style>
+
 </head>
 
 <body>
@@ -61,18 +65,18 @@
                         <li>
                             <a class="page-scroll" href="#team">Team</a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a class="page-scroll" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
+                        </li> --}}
+                        {{-- <li>
                             <a class="page-scroll" href="#pricing">Pricing</a>
-                        </li>
+                        </li> --}}
                         <li>
                             <a class="page-scroll" href="#clients">Clients</a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a class="page-scroll" href="#testimonials">Testimonials</a>
-                        </li>
+                        </li> --}}
                         <li>
                             <a class="page-scroll" href="#contact">Contact</a>
                         </li>
@@ -95,7 +99,6 @@
 
             <div class="carousel-inner">
                 <div class="item active"> 
-                
                     <div class="carousel-caption wrapper">
                         <div class="row">
                             <div class="col-md-12">
@@ -109,8 +112,8 @@
                         </div>
                     </div>
                     <img src="{{ asset('assets/img/backgrounds/header-bg.jpg') }}" alt="slider-image"/>
-                
                 </div>
+
                 <div class="item">
                     <div class="carousel-caption wrapper">
                         <div class="row">
@@ -151,30 +154,30 @@
                 <div class="row first-services">
                     <div class="col-sm-12 col-md-4 service">
                         <i class="fa fa-desktop"></i>
-                        <h4 class="service-heading">Web and Graphic Design</h4>
+                        <h4 class="service-heading">Web site and Graphic Design</h4>
                         <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-sm-12 col-md-4 service">
-                        <i class="fa fa-magic"></i>
-                        <h4 class="service-heading">Branding</h4>
+                        <i class="fa fa-picture-o"></i>
+                        <h4 class="service-heading">Photography</h4>
                         <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-sm-12 col-md-4 service">
-                        <i class="fa fa-cubes"></i>
-                        <h4 class="service-heading">Front End Development</h4>
+                        <i class="fa fa-cloud"></i>
+                        <h4 class="service-heading">Front End & Back End Development</h4>
                         <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
                 <!-- Second row services -->
                 <div class="row second-services">
                     <div class="col-sm-12 col-md-4 service">
-                        <i class="fa fa-cogs"></i>
-                        <h4 class="service-heading">Back End Development</h4>
+                        <i class="fa fa-mobile"></i>
+                        <h4 class="service-heading">Mobile Applications</h4>
                         <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-sm-12 col-md-4 service">
-                        <i class="fa fa-laptop"></i>
-                        <h4 class="service-heading">Responsive Design</h4>
+                        <i class="fa fa-database"></i>
+                        <h4 class="service-heading">Database design</h4>
                         <p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-sm-12 col-md-4 service">
@@ -273,7 +276,7 @@
         </div>
     </section>
     <!-- Portfolio Section -->
-    <section id="portfolio">
+    {{-- <section id="portfolio">
         <div class="container-fluid wrapper">
             <div class="row">
                 <div class="col-md-12">
@@ -417,9 +420,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
      <!-- Pricing Section -->
-    <section id="pricing">
+    {{-- <section id="pricing">
         <div class="container-fluid wrapper">
             <div class="row">
                 <div class="col-lg-12 text-left">
@@ -476,10 +479,17 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Client Section -->
     <div id="clients">
+        
         <div class="container-fluid-clients wrapper">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Team</h2>
+                    <p class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+            </div>
             <div id="myCarousel-three" class="carousel-clients slide">
                 <!-- Wrapper for Slides -->
                 <div class="carousel-inner">
@@ -497,7 +507,7 @@
                             <a href="#" class="logo-link"><img src="{{ asset('assets/img/clients/airbnb-logo.png') }}" class="client-logo" alt="logo"></a>
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
-                            <a href="#" class="logo-link"><img src="{{ asset('assets/img/clients/bootstrap-logo.png"') }} class="client-logo" alt="logo"></a>
+                            <a href="#" class="logo-link"><img src="{{ asset('assets/img/clients/bootstrap-logo.png') }}" class="client-logo" alt="logo"></a>
                         </div>
                         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
                             <a href="#" class="logo-link"><img src="{{ asset('assets/img/clients/tmobile-logo.png') }}" class="client-logo" alt="logo"></a>
@@ -528,7 +538,7 @@
         </div>
     </div>
     <!-- Testimonials Section-->
-    <section id="testimonials">
+    {{-- <section id="testimonials">
         <div class="container-fluid wrapper">
             <div class="row">
                 <div class="col-sm-8 col-lg-12 text-left">
@@ -576,7 +586,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Contact Section -->
     <section id="contact">
         <div class="container-fluid wrapper">

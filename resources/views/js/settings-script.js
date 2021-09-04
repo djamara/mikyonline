@@ -10,12 +10,9 @@ jQuery(document).ready(function($) {
 
     $(".gradient1").click(function() {
 
-
-
         $('<style />', {
             text: '.navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {border-bottom-color:#e84040; }section h2.section-heading, .text-muted-role, a, .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {color:#e84040;}.btn-xl, ul.social-buttons li a, ul.filter li a, .pricing .border, .pricing a.btn-send, .scroll-up a, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle, .scroll-up a:hover, .scroll-up a:active, .pricing-top-box {background-color: #e84040;}#services i.fa, #testimonials {background:#e84040;} '
         }).appendTo('head');
-
 
     });
 
